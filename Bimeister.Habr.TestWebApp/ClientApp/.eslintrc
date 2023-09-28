@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-recommended",
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
+      // Make sure it's always the last config, so it gets the chance to override other configs.
+      "eslint-config-prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2021
+    },
+    "plugins": [
+    ],
+    "rules": {
+    }
+  }
