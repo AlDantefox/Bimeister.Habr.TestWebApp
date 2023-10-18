@@ -52,8 +52,8 @@ namespace Bimeister.Habr.TestWebApp
                     app.UseCors();
                 }
                 app.UseRouting();
-                app.UseAuthorization();
                 app.UseAuthentication();
+                app.UseAuthorization();
                 app.UseEndpoints(endpoints => endpoints.MapControllers());
                 app.UseSpa(spa =>
                 {
